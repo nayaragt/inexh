@@ -677,6 +677,7 @@ $(document).on('click',function(){
 
 <script>
 //Documentação: https://developers.google.com/analytics/devguides/collection/analyticsjs/events
+//ga('send', 'event', "Categoria do evento","Açao do evento", "Rotulo do evento", 42)
 document.getElementById("menuInicio").addEventListener("click", function(){
 	ga('send', 'event', "clicou","ClickMenu", "menuInicio", 42)
 });
