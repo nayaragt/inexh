@@ -12,8 +12,7 @@
    
   
   
-  <!-- GA Autotracker Begin -->
-	
+  <!-- GA ANALYTICS Begin -->
 	<script async src='https://www.google-analytics.com/analytics.js'></script>
 	<script async src='js/autotrack.js'></script>
 	<script>
@@ -22,16 +21,8 @@
 	ga('set', 'page', '/home_laranja_5.html');
 	ga('send', 'pageview')
 	// Replace the following lines with the plugins you want to use.
-	
-	// 
-	
-	
-	
-	
-	
 	</script>
-	
-  <!-- GA Autotracker End -->
+  <!-- GA ANALYTICS End -->
   
   
   <style>
@@ -376,11 +367,7 @@ margin-bottom: 45px;
   </div>
 </nav>
 
-<script>
-$(document).on('click',function(){
-	$('.collapse').collapse('hide');
-})
-</script>
+
 
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
 	<div class="container-carousel"> <!-- nova div -->
@@ -477,37 +464,37 @@ $(document).on('click',function(){
   <div class="row">
     <div class="col-xs-6 col-sm-3 col-md-3">
       <p class="text-center"><strong>Ane Amaral</strong></p><br>
-      <a href="#demo" data-toggle="collapse">
+      <a href="#demo1" data-toggle="collapse">
         <img src="images/ane.jpg" class="img-circle person" alt="" width="255" height="255">
       </a>
-      <div id="demo" class="collapse">
+      <div id="demo1" class="collapse">
         <p>Singer</p>
       </div>
     </div>
     <div class="col-xs-6 col-sm-3 col-md-3">
       <p class="text-center"><strong>Guto Mattos</strong></p><br>
-      <a href="#demo" data-toggle="collapse">
+      <a href="#demo2" data-toggle="collapse">
         <img src="images/joao.jpg" class="img-circle person" alt="" width="255" height="255">
       </a>
-      <div id="demo" class="collapse">
+      <div id="demo2" class="collapse">
         <p>Guitarist</p>
       </div>
     </div>
     <div class="col-xs-6 col-sm-3 col-md-3">
       <p class="text-center"><strong>Luan Louren&ccedil;o</strong></p><br>
-      <a href="#demo" data-toggle="collapse">
+      <a href="#demo3" data-toggle="collapse">
         <img src="images/luan.jpg" class="img-circle person" alt="" width="255" height="255">
       </a>
-      <div id="demo" class="collapse">
+      <div id="demo3" class="collapse">
         <p>Drummer</p>
       </div>
     </div>
     <div class="col-xs-6 col-sm-3 col-md-3">
       <p class="text-center"><strong>XXXX XXXX</strong></p><br>
-      <a href="#demo" data-toggle="collapse">
+      <a href="#demo4" data-toggle="collapse">
         <img src="images/outro.jpg" class="img-circle person" alt="" width="255" height="255">
       </a>
-      <div id="demo" class="collapse">
+      <div id="demo4" class="collapse">
         <p>Bassist</p>
       </div>
     </div>
@@ -676,6 +663,14 @@ $(document).on('click',function(){
 
 
 <script>
+
+// MENU COLLAPSE BEGIN
+$(document).on('click',function(){
+	$('.collapse').collapse('hide');
+})
+// MENU COLLAPSE END
+
+// GOOGLE ANALYTICS EVENTS BEGIN
 //Documentação: https://developers.google.com/analytics/devguides/collection/analyticsjs/events
 //ga('send', 'event', "Categoria do evento","Açao do evento", "Rotulo do evento", 42)
 document.getElementById("menuInicio").addEventListener("click", function(){
@@ -693,7 +688,7 @@ document.getElementById("menuAgenda").addEventListener("click", function(){
 document.getElementById("menuContato").addEventListener("click", function(){
 	ga('send', 'event', "clicou","ClickMenu", "menuContato", 42)
 });
-
+// GOOGLE ANALYTICS EVENTS END
 
 
 $(document).ready(function(){
