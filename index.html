@@ -10,22 +10,19 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
    
-  <!-- Google Analytics Begin -->
-  <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-88852804-1', 'auto');
-  ga('send', 'pageview');
-  </script>
-  <!-- Google Analytics End -->
   
-  <!-- GA Autotracker Begin -->
-  <script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;</script>
-  <script async src="https://www.google-analytics.com/analytics.js"></script>
-  <script aysnc src="js/autotrack.js"></script>
-  <!-- GA Autotracker End -->
+  
+  <!-- GA ANALYTICS Begin -->
+	<script async src='https://www.google-analytics.com/analytics.js'></script>
+	<script async src='js/autotrack.js'></script>
+	<script>
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-88852804-1', 'auto');
+	ga('set', 'page', '/home_laranja_5.html');
+	ga('send', 'pageview')
+	// Replace the following lines with the plugins you want to use.
+	</script>
+  <!-- GA ANALYTICS End -->
   
   
   <style>
@@ -49,6 +46,7 @@
       height: 80%;
       opacity: 0.7;
   }
+  
   .person:hover {
       /* border-color: #f1f1f1; */
 	  border-color: #f0ad4e; 
@@ -359,21 +357,17 @@ margin-bottom: 45px;
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right"> <!-- MENU PARA A DIREITA -->
-        <li><a href="#inicio">IN&iacute;CIO</a></li>
-        <li><a href="#banda">A BANDA</a></li>
-        <li><a href="#agenda">AGENDA</a></li>
-        <li><a href="#contato">CONTATO</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+        <li><a id="menuInicio" href="#inicio">IN&iacute;CIO</a></li>
+        <li><a id="menuBanda" href="#banda">A BANDA</a></li>
+        <li><a id="menuAgenda" href="#agenda">AGENDA</a></li>
+        <li><a id="menuContato" href="#contato">CONTATO</a></li>
+        <!--<li><a id="menuBanda" href="#"><span class="glyphicon glyphicon-search"></span></a></li>-->
       </ul>
     </div>
   </div>
 </nav>
 
-<script>
-$(document).on('click',function(){
-	$('.collapse').collapse('hide');
-})
-</script>
+
 
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
 	<div class="container-carousel"> <!-- nova div -->
@@ -470,37 +464,37 @@ $(document).on('click',function(){
   <div class="row">
     <div class="col-xs-6 col-sm-3 col-md-3">
       <p class="text-center"><strong>Ane Amaral</strong></p><br>
-      <a href="#demo" data-toggle="collapse">
+      <!-- <a href="#demo1" data-toggle="collapse"> -->
         <img src="images/ane.jpg" class="img-circle person" alt="" width="255" height="255">
       </a>
-      <div id="demo" class="collapse">
+      <div id="demo1" class="collapse">
         <p>Singer</p>
       </div>
     </div>
     <div class="col-xs-6 col-sm-3 col-md-3">
       <p class="text-center"><strong>Guto Mattos</strong></p><br>
-      <a href="#demo" data-toggle="collapse">
+      <!-- <a href="#demo2" data-toggle="collapse"> -->
         <img src="images/joao.jpg" class="img-circle person" alt="" width="255" height="255">
       </a>
-      <div id="demo" class="collapse">
+      <div id="demo2" class="collapse">
         <p>Guitarist</p>
       </div>
     </div>
     <div class="col-xs-6 col-sm-3 col-md-3">
       <p class="text-center"><strong>Luan Louren&ccedil;o</strong></p><br>
-      <a href="#demo" data-toggle="collapse">
+      <!-- <a href="#demo3" data-toggle="collapse"> -->
         <img src="images/luan.jpg" class="img-circle person" alt="" width="255" height="255">
       </a>
-      <div id="demo" class="collapse">
+      <div id="demo3" class="collapse">
         <p>Drummer</p>
       </div>
     </div>
     <div class="col-xs-6 col-sm-3 col-md-3">
       <p class="text-center"><strong>XXXX XXXX</strong></p><br>
-      <a href="#demo" data-toggle="collapse">
+      <!-- <a href="#demo4" data-toggle="collapse"> -->
         <img src="images/outro.jpg" class="img-circle person" alt="" width="255" height="255">
       </a>
-      <div id="demo" class="collapse">
+      <div id="demo4" class="collapse">
         <p>Bassist</p>
       </div>
     </div>
@@ -528,32 +522,33 @@ $(document).on('click',function(){
 		<div class="container-fluid bg-3 text-center">    
 			<h2 class="margin">Acompanhe o VOIC3 nas redes sociais!</h2><br>
 			<!-- <h3 class="margin">Acompanhe o VOIC3 nas redes sociais!</h3><br> -->
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><br>
 			<div class="row text-justify">
-				<div class="hidden-xs col-sm-4 col-md-4">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-					<img src="advertising/instagram_banner.png" class="img-responsive margin" style="width:100%" alt="instagram">
+				<div class="hidden-xs col-sm-4 col-md-4 col-lg-4">
+					<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> -->
+					<a href="http://instagram.com/voic3oficial" target="_blank"><img src="advertising/instagram_banner.png" class="img-responsive center margin" style="width:60%" alt="instagram"></a> 
 				</div>
-				<div class="hidden-xs col-sm-4 col-md-4"> 
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-					<img src="advertising/facebook_banner.png" class="img-responsive margin" style="width:100%" alt="facebook">
+				<div class="hidden-xs col-sm-4 col-md-4 col-lg-4"> 
+					<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> -->
+					<a href="http://facebook.com/voic3oficial" target="_blank"><img src="advertising/facebook_banner.png" class="img-responsive center margin" style="width:60%" alt="facebook"></a>
 				</div>
-				<div class="hidden-xs col-sm-4 col-md-4"> 
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-					<img src="advertising/youtube_banner.png" class="img-responsive margin" style="width:100%" alt="youtube">
+				<div class="hidden-xs col-sm-4 col-md-4 col-lg-4"> 
+					<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> -->
+					<a href="http://www.youtube.com/channel/UCtQx2apVhvCoUaPm1YVVkbg" target="_blank"><img src="advertising/youtube_banner.png" class="img-responsive center margin" style="width:60%" alt="youtube"></a>
 				</div>
 			</div>
 			<div class="row text-justify">
-				<div class="col-xs-12 hidden-sm hidden-md hidden-lg">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-					<img src="advertising/instagram_banner.png" class="img-responsive center margin" style="width:50%" alt="instagram">
+				<div class="col-xs-4 hidden-sm hidden-md hidden-lg">
+					<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> -->
+					<a href="http://instagram.com/voic3oficial" target="_blank"><img src="advertising/instagram_banner.png" class="img-responsive center margin" style="width:100%" alt="instagram"></a> 
 				</div>
-				<div class="col-xs-12 hidden-sm hidden-md hidden-lg"> 
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-					<img src="advertising/facebook_banner.png" class="img-responsive center margin" style="width:50%" alt="facebook">
+				<div class="col-xs-4 hidden-sm hidden-md hidden-lg"> 
+					<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> -->
+					<a href="http://facebook.com/voic3oficial" target="_blank"><img src="advertising/facebook_banner.png" class="img-responsive center margin" style="width:100%" alt="facebook"></a>
 				</div>
-				<div class="col-xs-12 hidden-sm hidden-md hidden-lg"> 
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-					<img src="advertising/youtube_banner.png" class="img-responsive center margin" style="width:50%" alt="youtube">
+				<div class="col-xs-4 hidden-sm hidden-md hidden-lg"> 
+					<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> -->
+					<a href="http://www.youtube.com/channel/UCtQx2apVhvCoUaPm1YVVkbg" target="_blank"><img src="advertising/youtube_banner.png" class="img-responsive center margin" style="width:100%" alt="youtube"></a>
 				</div>
 			</div>
 		</div>
@@ -569,7 +564,7 @@ $(document).on('click',function(){
 				<div class="row">
 					<div class="col-sm-6">
 						<p><img src="icons/toast1.png" alt="" class="img-thumbnail" width="25" height="25"> R. dos Pinheiros, 877 - Pinheiros - S&atilde;o Paulo / SP</p>
-						<p><img src="icons/clock1.png" alt="" class="img-thumbnail margin" width="25" height="25"> 22h00 </p> <BR>
+						<p><img src="icons/clock1.png" alt="" class="img-thumbnail" width="25" height="25"> 22h00 </p> <br>
 						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.031787978085!2d-46.68840918555828!3d-23.56730178467991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce57759468a9cd%3A0x95e92dfb1054227!2zRXN0YcOnw6NvIEZyYWRpcXVl!5e0!3m2!1spt-BR!2sbr!4v1481562788661" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
 					</div>
 				</div>
@@ -585,7 +580,7 @@ $(document).on('click',function(){
 				<div class="row">
 					<div class="col-sm-6">
 						<p><img src="icons/cutlery1.png" alt="" class="img-thumbnail" width="25" height="25"> R. Arist&iacute;des Belini, 320 - Pestana - Osasco / SP </p>
-						<p><img src="icons/clock1.png" alt="" class="img-thumbnail margin" width="25" height="25"> 18h00 </p> <BR>
+						<p><img src="icons/clock1.png" alt="" class="img-thumbnail" width="25" height="25"> 18h00 </p> <br>
 						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.0084084064274!2d-46.8019846855589!3d-23.532199984697378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ceffb3be0d78b9%3A0xa0f0548a4964dfe1!2sBatataria+Arrudas+Bar!5e0!3m2!1spt-BR!2sbr!4v1481562667777" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
 					</div>
 				</div>
@@ -602,7 +597,7 @@ $(document).on('click',function(){
 				<div class="row">
 					<div class="col-sm-6">
 						<p><img src="icons/cutlery1.png" alt="" class="img-thumbnail" width="25" height="25"> Cal&ccedil;ada Aldebar&atilde;, 14 - Centro de Apoio II - Alphaville / SP </p>
-						<p><img src="icons/clock1.png" alt="" class="img-thumbnail margin" width="25" height="25">22h00 </p> <BR>
+						<p><img src="icons/clock1.png" alt="" class="img-thumbnail" width="25" height="25">22h00 </p> <br>
 						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.9029157101695!2d-46.87861978556046!3d-23.463966184731305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf0316d6cc29cb%3A0x45becd036d0bcddf!2sHB+BEER+LANCHONETE+E+COMERCIO+DE+CERVEJAS+LTDA!5e0!3m2!1spt-BR!2sbr!4v1481562751823" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
 					</div>
 				</div>
@@ -669,6 +664,34 @@ $(document).on('click',function(){
 
 
 <script>
+
+// MENU COLLAPSE BEGIN
+$(document).on('click',function(){
+	$('.collapse').collapse('hide');
+})
+// MENU COLLAPSE END
+
+// GOOGLE ANALYTICS EVENTS BEGIN
+//Documentação: https://developers.google.com/analytics/devguides/collection/analyticsjs/events
+//ga('send', 'event', "Categoria do evento","Açao do evento", "Rotulo do evento", 42)
+document.getElementById("menuInicio").addEventListener("click", function(){
+	ga('send', 'event', "clicou","ClickMenu", "menuInicio", 42)
+});
+
+document.getElementById("menuBanda").addEventListener("click", function(){
+	ga('send', 'event', "clicou","ClickMenu", "menuBanda", 42)
+});
+
+document.getElementById("menuAgenda").addEventListener("click", function(){
+	ga('send', 'event', "clicou","ClickMenu", "menuAgenda", 42)
+});
+
+document.getElementById("menuContato").addEventListener("click", function(){
+	ga('send', 'event', "clicou","ClickMenu", "menuContato", 42)
+});
+// GOOGLE ANALYTICS EVENTS END
+
+
 $(document).ready(function(){
   // Initialize Tooltip
   $('[data-toggle="tooltip"]').tooltip(); 
