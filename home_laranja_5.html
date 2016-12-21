@@ -366,11 +366,11 @@ margin-bottom: 45px;
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right"> <!-- MENU PARA A DIREITA -->
-        <li><a id="inicio" href="#inicio">IN&iacute;CIO</a></li>
+        <li><a id="menuInicio" href="#inicio">IN&iacute;CIO</a></li>
         <li><a id="menuBanda" href="#banda">A BANDA</a></li>
-        <li><a href="#agenda">AGENDA</a></li>
-        <li><a href="#contato">CONTATO</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+        <li><a id="menuAgenda" href="#agenda">AGENDA</a></li>
+        <li><a id="menuContato" href="#contato">CONTATO</a></li>
+        <!--<li><a id="menuBanda" href="#"><span class="glyphicon glyphicon-search"></span></a></li>-->
       </ul>
     </div>
   </div>
@@ -676,10 +676,21 @@ $(document).on('click',function(){
 
 
 <script>
-document.getElementById("menuBanda").addEventListener("click", function(){
-		ga('send', 'event', "clicou","banca", "menu", 42)
-	});
+document.getElementById("menuInicio").addEventListener("click", function(){
+	ga('send', 'event', "clicou","menuInicio", "menu", 42)
+});
 
+document.getElementById("menuBanda").addEventListener("click", function(){
+	ga('send', 'event', "clicou","menuBanda", "menu", 42)
+});
+
+document.getElementById("menuAgenda").addEventListener("click", function(){
+	ga('send', 'event', "clicou","menuAgenda", "menu", 42)
+});
+
+document.getElementById("menuContato").addEventListener("click", function(){
+	ga('send', 'event', "clicou","menuContato", "menu", 42)
+});
 
 
 
