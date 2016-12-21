@@ -22,9 +22,24 @@
   <!-- Google Analytics End -->
   
   <!-- GA Autotracker Begin -->
-  <script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;</script>
-  <script async src="https://www.google-analytics.com/analytics.js"></script>
-  <script aysnc src="js/autotrack.js"></script>
+	<script>
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-88852804-1', 'auto');
+
+	// Replace the following lines with the plugins you want to use.
+	ga('require', 'urlChangeTracker');
+	// 
+	
+	
+	
+	document.getElementById("banda").addEventListener("click", function(){
+		ga('set', 'dimension1', 'Level 1');
+	});
+
+	ga('send', 'pageview');
+	</script>
+	<script async src='https://www.google-analytics.com/analytics.js'></script>
+	<script async src='js/autotrack.js'></script>
   <!-- GA Autotracker End -->
   
   
@@ -359,8 +374,8 @@ margin-bottom: 45px;
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right"> <!-- MENU PARA A DIREITA -->
-        <li><a href="#inicio">IN&iacute;CIO</a></li>
-        <li><a href="#banda">A BANDA</a></li>
+        <li><a id="inicio" href="#inicio">IN&iacute;CIO</a></li>
+        <li><a id="banda" href="#banda">A BANDA</a></li>
         <li><a href="#agenda">AGENDA</a></li>
         <li><a href="#contato">CONTATO</a></li>
         <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
