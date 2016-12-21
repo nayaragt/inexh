@@ -27,10 +27,7 @@
 	
 	
 	
-	document.getElementById("menuBanda").addEventListener("click", function(){
-		ga('send', 'event', "clicou","banca", "menu", 42)
-	});
-
+	
 	
 	</script>
 	
@@ -679,6 +676,13 @@ $(document).on('click',function(){
 
 
 <script>
+document.getElementById("menuBanda").addEventListener("click", function(){
+		ga('send', 'event', "clicou","banca", "menu", 42)
+	});
+
+
+
+
 $(document).ready(function(){
   // Initialize Tooltip
   $('[data-toggle="tooltip"]').tooltip(); 
