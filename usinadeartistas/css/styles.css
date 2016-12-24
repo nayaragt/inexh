@@ -48,12 +48,14 @@ a:focus {
 
 h1,h2,h3,h4,h5,h6 {
     font-family: 'Questrial','Helvetica Neue',Arial,sans-serif;
+	color: #ff8c1a;
 }
 
 p {
     font-size: 17px;
     line-height: 1.7;
     margin-bottom: 20px;
+	text-align: justify;
 }
 
 .wide-space {
