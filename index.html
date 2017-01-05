@@ -1,9 +1,10 @@
 <!doctype html>
-<html lang="pt-br">
-<head>
+<html lang="pt-br" >
+
+	<head>
   <title>VOIC3</title>
   <meta charset="iso-8859-1">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
@@ -18,9 +19,8 @@
 	<script>
 	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
 	ga('create', 'UA-88852804-1', 'auto');
-	ga('set', 'page', '/home_laranja_5.html');
+	/* ga('set', 'page', '/index.html'); */
 	ga('send', 'pageview')
-	// Replace the following lines with the plugins you want to use.
 	</script>
   <!-- GA ANALYTICS End -->
   
@@ -674,22 +674,25 @@ $(document).on('click',function(){
 // GOOGLE ANALYTICS EVENTS BEGIN
 //Documentação: https://developers.google.com/analytics/devguides/collection/analyticsjs/events
 //ga('send', 'event', "Categoria do evento","Açao do evento", "Rotulo do evento", 42)
+
 document.getElementById("menuInicio").addEventListener("click", function(){
-	ga('send', 'event', "clicou","ClickMenu", "menuInicio", 42)
+	ga("send", "event", "menuInicio", "Click", "menuInicio", 42)
 });
 
 document.getElementById("menuBanda").addEventListener("click", function(){
-	ga('send', 'event', "clicou","ClickMenu", "menuBanda", 42)
+	ga("send", "event", "menuBanda", "Click", "menuBanda", 42)
 });
 
 document.getElementById("menuAgenda").addEventListener("click", function(){
-	ga('send', 'event', "clicou","ClickMenu", "menuAgenda", 42)
+	ga("send", "event", "menuAgenda", "Click", "menuAgenda", 42)
 });
 
 document.getElementById("menuContato").addEventListener("click", function(){
-	ga('send', 'event', "clicou","ClickMenu", "menuContato", 42)
+	ga("send", "event", "menuContato", "Click", "menuContato", 42)
 });
 // GOOGLE ANALYTICS EVENTS END
+
+
 
 
 $(document).ready(function(){
